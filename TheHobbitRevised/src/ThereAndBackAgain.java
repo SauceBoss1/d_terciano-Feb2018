@@ -19,7 +19,7 @@ public class ThereAndBackAgain
 		// Expected output:  Frodo has traveled 50 miles.
 		//                   Sam has traveled 50 miles.
 		//                   Gimli has traveled 50 miles.
-		
+		Traveler[] party1 = {frodo, sam, gimli};
 		
 		
 		
