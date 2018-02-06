@@ -1,4 +1,10 @@
-
+/**
+ * 
+ * @author derfelterciano
+ * 
+ * @description: super class for hobbits, wizards, and dwarfs
+ *
+ */
 public class Traveler 
 {
 	//fields

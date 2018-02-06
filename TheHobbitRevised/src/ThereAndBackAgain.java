@@ -1,3 +1,9 @@
+/**
+ * @author: Derfel Terciano
+ * @version: 0.1
+ * 
+ * Lord of the Rings activity
+ */
 import java.util.ArrayList;
 import java.util.Arrays;
 
@@ -36,17 +42,12 @@ public class ThereAndBackAgain
 				               "Oin", "Gloin", "Bifur", "Bofur", "Bombur", "Thorin"};
 
 		// Make a new ArrayList to hold a 2nd party of Travelers called party2:
-		Hobbit bilbo = new Hobbit("Bilbo");
-		Hobbit smaug = new Hobbit("Smaug");
-		Hobbit thranduil = new Hobbit("Thranduil");
 		ArrayList<Traveler> party2 = new ArrayList<Traveler>();
-		party2.addAll(Arrays.asList(bilbo,smaug,thranduil));
 		// Call the createParty method and pass it party2 and the dwarfNames array.
-		
-		
+		createParty(party2,dwarfNames);
 		// Finally, call the allTravel method passing it party2 and 100 (representing
 		// the 100 miles that party2 has traveled together.  
-		
+		allTravel(party2,100);
 
 
 		
@@ -63,6 +64,12 @@ public class ThereAndBackAgain
 	// Then it uses a loop to add all the dwarves from the String array to the party.
 	public static void createParty(ArrayList<Traveler> party, String[] dwarfNames)
 	{	
+		party.add(new Hobbit("Bilbo"));
+		party.add(new Wizard("Gandalf","Grey"));
+		for(String dwarf: dwarfNames)
+		{
+			party.add(new Dwarf(dwarf));
+		}
 	
 	}
 	
@@ -76,6 +83,12 @@ public class ThereAndBackAgain
 	//     kili has traveled 100 miles
 	public static String allTravel(ArrayList<Traveler> party, int miles)
 	{
-		return "";
+		String travelOfEachMember ="";
+		for(Traveler person: party)
+		{
+			person.travel(miles);
+			travelOfEachMember += person.getName() + "has traveled "+ person.getDistanceTraveled() +" miles \n";
+		}
+		return travelOfEachMember;
 	}
 }
