@@ -1,4 +1,5 @@
 import java.util.ArrayList;
+import java.util.Arrays;
 
 public class ThereAndBackAgain 
 {
@@ -35,8 +36,11 @@ public class ThereAndBackAgain
 				               "Oin", "Gloin", "Bifur", "Bofur", "Bombur", "Thorin"};
 
 		// Make a new ArrayList to hold a 2nd party of Travelers called party2:
-		
-		
+		Hobbit bilbo = new Hobbit("Bilbo");
+		Hobbit smaug = new Hobbit("Smaug");
+		Hobbit thranduil = new Hobbit("Thranduil");
+		ArrayList<Traveler> party2 = new ArrayList<Traveler>();
+		party2.addAll(Arrays.asList(bilbo,smaug,thranduil));
 		// Call the createParty method and pass it party2 and the dwarfNames array.
 		
 		
