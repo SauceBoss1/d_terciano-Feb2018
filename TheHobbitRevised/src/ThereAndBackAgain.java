@@ -47,7 +47,7 @@ public class ThereAndBackAgain
 		createParty(party2,dwarfNames);
 		// Finally, call the allTravel method passing it party2 and 100 (representing
 		// the 100 miles that party2 has traveled together.  
-		allTravel(party2,100);
+		System.out.println(allTravel(party2,100));
 
 
 		
@@ -87,7 +87,7 @@ public class ThereAndBackAgain
 		for(Traveler person: party)
 		{
 			person.travel(miles);
-			travelOfEachMember += person.getName() + "has traveled "+ person.getDistanceTraveled() +" miles \n";
+			travelOfEachMember += person.getName() + " has traveled "+ person.getDistanceTraveled() +" miles. \n";
 		}
 		return travelOfEachMember;
 	}
