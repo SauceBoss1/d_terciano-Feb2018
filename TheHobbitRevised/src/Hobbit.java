@@ -1,4 +1,12 @@
-
+/**
+ * This class is the subClass of the Travler class
+ * 
+ * Other related classes is Dwarf and Wizard.
+ * 
+ * @author derfelTerciano
+ * @version 0.1
+ * 
+ */
 public class Hobbit extends Traveler
 {
 	//Call Traveler's constructor (look it up p587) to set the name field and then 

@@ -1,3 +1,12 @@
+/**
+ * 
+ * This class is the subclass of the superClass of the Travelerclass
+ * Other subclasses that are related to the Dwarf is Hobbit, and Wizard classes.
+ * @author derfelTerciano
+ * 
+ * @version 0.1
+ * 
+ */
 public class Dwarf extends Traveler
 {
 	//Dwarves will need a constructor, but there's nothing new for them beyond

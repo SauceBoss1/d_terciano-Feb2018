@@ -1,4 +1,13 @@
-
+/**
+ * This is the subclass of the Traveler class.
+ * 
+ * Other related classes is the Hobbit and Dwarf class.
+ * 
+ * @author derfelterciano
+ * 
+ * @version 0.1
+ * 
+ */
 public class Wizard extends Traveler
 {
 	//Call Traveler's constructor (look it up p587) to set the name field and then 
