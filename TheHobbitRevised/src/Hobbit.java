@@ -21,7 +21,5 @@ public class Hobbit extends Traveler
 		super(name);
 		this.ringObsessed=false;
 	}
-	
-	
-	
+		
 }
