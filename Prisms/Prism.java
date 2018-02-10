@@ -10,7 +10,7 @@
  */
 
 /**
- * Super class for all the other Prisms.
+ * Super class for all the other Prisms. Some of the available methods are abstract
  * <p>This method has a private field of height
  * @author Derfel Terciano
  * @version 0.1
@@ -24,15 +24,25 @@ public abstract class Prism {
 		this.height=height;
 	}
 	
-	public abstract int calcAreaOfBase();
-	public abstract int calcPerimeter();
+	public abstract double calcAreaOfBase();
+	public abstract double calcPerimeter();
 	
-	public int CalcVolume() {
-		return calcAreaOfBase() * height;
+	public double calcVolume() {
+		return round2(calcAreaOfBase() * height);
 	}
 	
-	public int calcSA() {
-		return (calcPerimeter() * height) + (2*calcAreaOfBase());
+	public double calcSA() {
+		return round2(calcPerimeter() * height) + (2*calcAreaOfBase());
+	}
+	
+	public double round2(double num) {
+		double x = (num - num % 0.001) * 1000;
+		if (x % 10 >= 5) {
+			x += 10;
+			return (x - x % 10) / 1000;
+		} else {
+			return (x - x % 10) / 1000;
+		}
 	}
 	
 	

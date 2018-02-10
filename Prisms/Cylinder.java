@@ -4,9 +4,28 @@
  * Provide a constructor and the methods required by its abstract superclass.  
  */
 
-public class Cylinder extends Prism
-{
+/**
+ * calculates the perimeter and area of the base of a cylinder
+ * @author Derfel Terciano
+ * @version 0.1
+ */
+
+public class Cylinder extends Prism {
+	private double radius;
+	final double pi = 3.14159265359;
 	
+	public Cylinder(double radius,int height) {
+		super(height);
+		this.radius=radius;
+	}
+	
+	public double calcPerimeter() {
+		return 2*pi*radius;
+	}
+	
+	public double calcAreaOfBase() {
+		return round2(pi * (radius*radius));
+	}
 	
 	
 	

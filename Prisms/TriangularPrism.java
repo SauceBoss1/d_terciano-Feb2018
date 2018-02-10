@@ -9,9 +9,34 @@
  * It uses half the perimeter.  (Why might you want to use 0.5 instead of 1/2?)
  */
 
+/**
+ * calculates the perimeter and area of the base of a cylinder
+ * @author Derfel Terciano
+ * @version 0.1
+ */
 
-public class TriangularPrism extends Prism
-{
+
+public class TriangularPrism extends Prism{
+	private double sideA;
+	private double sideB;
+	private double sideC;
+	
+	public TriangularPrism(double sideA, double sideB, double sideC, int height) {
+		super(height);
+		this.sideA=sideA;
+		this.sideB=sideB;
+		this.sideC=sideC;		
+	}
+	
+	public double calcPerimeter() {
+		return sideA + sideB + sideC;
+	}
+	
+	public double calcAreaOfBase() {
+		double s = calcPerimeter() * 0.5;
+		double area = Math.sqrt(s*(s-sideA)*(s-sideB)*(s-sideC));
+		return area;
+	}
 	
 	
 	
