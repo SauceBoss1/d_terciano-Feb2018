@@ -24,7 +24,7 @@ public class Cylinder extends Prism {
 	}
 	
 	public double calcAreaOfBase() {
-		return round2(pi * (radius*radius));
+		return super.round2(pi * (radius*radius));
 	}
 	
 	
