@@ -14,11 +14,11 @@ public class Sphere extends ThreeDShape{
 	}
 	
 	public double calcVolume() {
-		return (4/3)*pi*exponent(radius,3);
+		return (4.0/3)*pi*exponent(radius,3);
 	}
 	
 	public double calcSA() {
-		return 4*pi*exponent(radius,2);
+		return 4.0*pi*exponent(radius,2);
 	}
 	
 	private double exponent(double number,int power) {
