@@ -21,6 +21,12 @@ public class MakeShape {
 			System.out.println("The surface area of p" + (i+1) +": " + prisms[i].calcSA());
 			System.out.println();
 		}
+		
+		System.out.println("3D shapes");
+		
+		ThreeDShape s1 = new Sphere(5.0);
+		System.out.println("The volume of s1 is: "+ s1.getVolume());
+		System.out.println("The surface area of s1 is: "+ s1.getSA());
 	}
 
 }
