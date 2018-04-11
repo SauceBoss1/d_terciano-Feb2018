@@ -8,7 +8,7 @@ public class Sphere extends ThreeDShape{
 	final double pi=3.14159265359;
 	
 	public Sphere(double radius) {
-		super();
+		super(); //Does not work
 		this.radius=radius;
 		
 	}
